@@ -1,0 +1,40 @@
+package com.pan.society.vo;
+
+import lombok.Data;
+
+/**
+ * create by panstark
+ * create date 2019/5/9
+ */
+public class Address {
+
+    public String postcode;
+
+    private String street;
+
+    private String state;
+
+    public String getPostcode() {
+        return postcode;
+    }
+
+    public void setPostcode(String postcode) {
+        this.postcode = postcode;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+}

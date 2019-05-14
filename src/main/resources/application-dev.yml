@@ -1,0 +1,15 @@
+
+#mysql database setting
+jdbc:
+  type: mysql
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://39.106.115.128:3306/society?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
+  username: root
+  password: Root.20182019
+
+
+
+china.user.name: guoxhe
+china.user.password: 123456
+china.user.gender: man
+china.user.intrest: woman
