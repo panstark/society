@@ -53,6 +53,10 @@ public class annoTest {
 
     }
 
+    /**
+     * 测试方法上的注解
+     * 通过md.invoke调用，需要参数对应。
+     */
     @Test
     public void annoMethodTest(){
         Lisi lisi = new Lisi(new AudiCar());
@@ -73,6 +77,11 @@ public class annoTest {
         }
     }
 
+    /**
+     *测试项目
+     * springboot
+     * 配置文件的值接注入到javabean中。
+     */
     @Test
     public void configurationTest(){
         System.out.println(people.toString());
