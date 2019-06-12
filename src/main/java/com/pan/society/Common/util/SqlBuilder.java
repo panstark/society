@@ -1,4 +1,4 @@
-package com.pan.society.Common;
+package com.pan.society.Common.util;
 
 /**
  * 查询用的sql拼装工具类

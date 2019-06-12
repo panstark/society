@@ -1,4 +1,4 @@
-package com.pan.society.Common;
+package com.pan.society.Common.util;
 
 /**
  * create by panstark

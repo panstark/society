@@ -1,4 +1,4 @@
-package com.pan.society.Common;
+package com.pan.society.Common.util;
 
 
 import org.apache.commons.lang3.reflect.MethodUtils;

@@ -1,4 +1,4 @@
-package com.pan.society.Common;
+package com.pan.society.Common.util;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
