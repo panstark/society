@@ -1,5 +1,9 @@
 package com.pan.society;
 
+import org.apache.commons.lang3.StringUtils;
+import org.junit.Test;
+
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -29,6 +33,24 @@ public class StringTest {
             }
         }
         return input;
+    }
+
+
+    @Test
+    public void addString(){
+        String littleName = "pan";
+        String name = "stark"+ (StringUtils.isNotBlank(littleName)?littleName:"");
+        System.out.println(name);
+
+    }
+
+    @Test
+    public void addBigDecimal(){
+        BigDecimal num = new BigDecimal(100);
+
+        String name = "stark"+ num;
+        System.out.println(name);
+
     }
 
 }

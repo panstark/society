@@ -1,5 +1,6 @@
 package com.pan.society.vo.car;
 
+import com.pan.society.anno.SafeCar;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Slf4j
+@SafeCar
 public class AudiCar implements Car{
 
     @Override

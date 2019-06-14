@@ -78,5 +78,33 @@ public class listTest {
         }
     }
 
+    @Test
+    public void addEle(){
+        List<Address> addresses = new ArrayList<>();
+        putValue(addresses);
+
+        addresses.stream().forEach(e->{
+            System.out.println(e);
+        });
+    }
+
+    private void putValue(List<Address> addresses) {
+        Address abc = new Address("abc","1","2");
+        Address bcd = new Address("bcd","1","2");
+        Address cdf = new Address("cdf","1","2");
+        addresses.add(abc);
+        addresses.add(bcd);
+        addresses.add(cdf);
+
+        addresses = changeList(addresses);
+    }
+
+    private List<Address> changeList(List<Address> addresses) {
+        Address dfg = new Address("cdf","1","2");
+        addresses.add(dfg);
+        addresses.get(0).setPostcode("0000");
+        return addresses;
+    }
+
 
 }
