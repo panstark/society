@@ -2,8 +2,10 @@ package com.pan.society;
 
 import com.pan.society.vo.Address;
 import com.pan.society.vo.car.AudiCar;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -105,6 +107,50 @@ public class listTest {
         addresses.get(0).setPostcode("0000");
         return addresses;
     }
+
+    @Test
+    public void iterateList(){
+        List<Address> addresses = new ArrayList<>();
+        putValue(addresses);
+        Iterator<Address> it = addresses.iterator();
+        while(it.hasNext()){
+            Address address = it.next();
+            List<String> list = address.getCountryList();
+            for(int i=0;i<10;i++){
+                list.add("row"+i);
+                if(list.size()>5){
+                    list.add("555"+5);
+                    break;
+                }
+            }
+        }
+
+        addresses.stream().forEach(e->{
+            System.out.println(e);
+        });
+    }
+
+    @Test
+    public void listAddSb(){
+        List<String> errMsg = new ArrayList<>();
+        for(int i=0;i<10;i++){
+            StringBuilder sb = new StringBuilder();
+            if(i%2==0){
+                sb.append(i+"加进来");
+            }
+            sb.insert(0,"wowo");
+            if(StringUtils.isNotBlank(sb.toString())){
+                errMsg.add(sb.toString());
+            }
+        }
+
+        System.out.println(errMsg.size());
+        errMsg.stream().forEach(e->{
+            System.out.println(e);
+        });
+        System.out.println(String.join("。",errMsg));
+    }
+
 
 
 }

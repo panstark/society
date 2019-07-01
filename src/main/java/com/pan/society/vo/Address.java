@@ -2,6 +2,9 @@ package com.pan.society.vo;
 
 import lombok.Data;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * create by panstark
  * create date 2019/5/9
@@ -24,5 +27,7 @@ public class Address {
     private String street;
 
     private String state;
+
+    private List<String> countryList = new ArrayList<>();
 
 }
