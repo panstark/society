@@ -1,16 +1,19 @@
 package com.pan.society;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
  * create by panstark
  * create date 2019/5/27
  */
+@Slf4j
 public class StringTest {
 
     public static void main(String[] args) {
@@ -51,6 +54,16 @@ public class StringTest {
         String name = "stark"+ num;
         System.out.println(name);
 
+    }
+
+    @Test
+    public void stringNull(){
+        String a = "";
+        log.info("qq"+String.format("%s",a));
+
+        Object bb = null;
+        Map<String,String> cc = (Map<String,String>)bb;
+        System.out.println(cc);
     }
 
 }
