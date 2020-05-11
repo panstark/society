@@ -38,4 +38,39 @@ public class DiffrentList {
 
     private Map<String,String> treeMap = new TreeMap<>();
 
+
+    public static void main(String[] args) {
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        list1.add("1");
+        list1.add("2");
+        list1.add("3");
+        list2.add("2");
+        list2.add("3");
+        list2.add("4");
+        System.out.println(list1.containsAll(list2));
+
+        removeOne(list1);
+        removeTwo(list1);
+
+
+
+    }
+
+    private static void removeTwo(List<String> list1) {
+        Iterator<String> iterator = list1.iterator();
+        iterator.hasNext();
+        iterator.next();
+        iterator.remove();
+        System.out.println(list1.size());
+    }
+
+    private static void removeOne(List<String> list1) {
+        Iterator<String> iterator = list1.iterator();
+        iterator.hasNext();
+        iterator.next();
+        iterator.remove();
+        System.out.println(list1.size());
+    }
+
 }

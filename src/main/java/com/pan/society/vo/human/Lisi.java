@@ -14,7 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 @GoodPeople
 @Slf4j
 @Data
-public class Lisi extends HumanWithCar {
+public class Lisi extends Driver {
 
     public Lisi(Car car){
         super(car);
@@ -37,7 +37,27 @@ public class Lisi extends HumanWithCar {
         car.stop();
     }
 
-   // @AnnoMethod(name="meat",value="a peace of meat")
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void drink() {
+
+    }
+
+    @Override
+    public void pee() {
+
+    }
+
+    @Override
+    public void shit() {
+
+    }
+
+    // @AnnoMethod(name="meat",value="a peace of meat")
     public void eat(String food){
         System.out.println("I want to eat:"+food);
     }

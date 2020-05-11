@@ -14,7 +14,6 @@ public interface Car {
 
     public void turnOffLight();
 
-
     public void turnLeft();
 
     public void turnRight();

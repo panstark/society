@@ -1,6 +1,5 @@
 package com.pan.society.vo.human;
 
-import com.pan.society.vo.car.Car;
 
 /**
  * create by panstark
@@ -9,4 +8,12 @@ import com.pan.society.vo.car.Car;
 public interface Human {
 
     public void goHome();
+
+    public void eat();
+
+    public void drink();
+
+    public void pee();
+
+    public void shit();
 }
