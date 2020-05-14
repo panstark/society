@@ -38,26 +38,28 @@ public class Lisi extends Driver {
     }
 
     @Override
+    @Display
     public void eat() {
-
+        System.out.println("eat");
     }
 
     @Override
+    @Display
     public void drink() {
-
+        System.out.println("drink");
     }
 
     @Override
+    @Display
     public void pee() {
-
+        System.out.println("pee");
     }
 
     @Override
     public void shit() {
-
+        System.out.println("shit");
     }
 
-    // @AnnoMethod(name="meat",value="a peace of meat")
     public void eat(String food){
         System.out.println("I want to eat:"+food);
     }
