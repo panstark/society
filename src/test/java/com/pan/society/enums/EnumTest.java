@@ -4,6 +4,10 @@ import com.pan.society.Common.ManyContants;
 import com.pan.society.Common.enums.ManyEnum;
 import org.junit.Test;
 
+import java.util.Collections;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * @author by panstark
  * @description
@@ -12,14 +16,22 @@ import org.junit.Test;
  */
 public class EnumTest {
 
+    private final Set<String> beanNames = Collections.newSetFromMap(new ConcurrentHashMap<>(16));
 
     @Test
-    public void enumTest() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+    public void enumTest() {
 
         boolean b = ManyEnum.DrinkEnum.HARDWATER.equals(ManyEnum.DrinkEnum.WATER);
+        ManyEnum.DrinkEnum SOFTWATER = ManyEnum.DrinkEnum.valueOf("SOFTWATER");
+        System.out.println(SOFTWATER);
 
         System.out.println(b);
 
         String water = ManyContants.drink.WATER;
+        System.out.println(water);
+
     }
+
+
+
 }

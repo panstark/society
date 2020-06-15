@@ -1,5 +1,6 @@
 package com.pan.society;
 
+import com.pan.society.Common.util.StringUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
@@ -64,6 +65,16 @@ public class StringTest {
         Object bb = null;
         Map<String,String> cc = (Map<String,String>)bb;
         System.out.println(cc);
+    }
+
+    @Test
+    public void stringLength(){
+        String a = "你我";
+        System.out.println("length："+a.length());
+
+        String b = null;
+        boolean bl = StringUtils.isNotBlank(b)&&b.length()>50;
+        System.out.println(bl);
     }
 
 }

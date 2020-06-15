@@ -4,9 +4,8 @@ import com.pan.society.vo.Address;
 import com.pan.society.vo.car.AudiCar;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+
+import java.util.*;
 
 /**
  * create by panstark
@@ -151,6 +150,12 @@ public class listTest {
         System.out.println(String.join("。",errMsg));
     }
 
-
+    @Test
+    public void hashSetPut(){
+        Set set = new HashSet();
+        set.add(null);
+        set.add("");
+        System.out.println("size:"+set.size());
+    }
 
 }
