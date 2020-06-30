@@ -5,6 +5,7 @@ import org.springframework.util.Assert;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -37,11 +38,32 @@ public class CalculateUtil {
 
 
     public static void main(String[] args) {
-        BigDecimal deduction = new BigDecimal(-97);
-        BigDecimal step = new BigDecimal(5);
+//        BigDecimal deduction = new BigDecimal(-97);
+//        BigDecimal step = new BigDecimal(5);
+//
+//        List<BigDecimal> stepList = stepReduce(deduction,step);
+//
+//        System.out.println(stepList.size());
 
-        List<BigDecimal> stepList = stepReduce(deduction,step);
+        List<String> nums = new ArrayList<>();
+        for(int i=0;i<10;i++){
+            nums.add(String.valueOf(i));
+        }
 
-        System.out.println(stepList.size());
+        removeNums(nums);
+
+        System.out.println(nums.size());
+    }
+
+    private static void removeNums(List<String> nums) {
+
+        Iterator<String> iterator = nums.iterator();
+        while(iterator.hasNext()){
+            String num = iterator.next();
+            if(Integer.valueOf(num)%2==0){
+                iterator.remove();
+            }
+        }
+
     }
 }
