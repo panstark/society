@@ -22,6 +22,7 @@ public class EnumTest {
     public void enumTest() {
 
         boolean b = ManyEnum.DrinkEnum.HARDWATER.equals(ManyEnum.DrinkEnum.WATER);
+        //枚举与string的转化
         ManyEnum.DrinkEnum SOFTWATER = ManyEnum.DrinkEnum.valueOf("SOFTWATER");
         System.out.println(SOFTWATER);
 
@@ -29,6 +30,7 @@ public class EnumTest {
 
         String water = ManyContants.drink.WATER;
         System.out.println(water);
+
 
     }
 
