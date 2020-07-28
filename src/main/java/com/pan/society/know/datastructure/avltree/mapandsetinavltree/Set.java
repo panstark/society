@@ -1,0 +1,10 @@
+package com.pan.society.know.datastructure.avltree.mapandsetinavltree;
+
+public interface Set<E> {
+
+    void add(E e);
+    boolean contains(E e);
+    void remove(E e);
+    int getSize();
+    boolean isEmpty();
+}

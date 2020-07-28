@@ -1,6 +1,6 @@
 package com.pan.society;
 
-import com.pan.society.Common.util.StringUtil;
+import com.pan.society.common.util.StringUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;

@@ -1,7 +1,7 @@
 package com.pan.society.enums;
 
-import com.pan.society.Common.ManyContants;
-import com.pan.society.Common.enums.ManyEnum;
+import com.pan.society.common.ManyContants;
+import com.pan.society.common.enums.ManyEnum;
 import org.junit.Test;
 
 import java.util.Collections;
